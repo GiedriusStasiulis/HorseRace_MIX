@@ -15,7 +15,7 @@ public class AnimateHorse : MonoBehaviour, IVirtualButtonEventHandler
     // Start is called before the first frame update
     void Start()
     {
-        vbBtnObj = GameObject.Find("MoveClubsHorseBtn");
+        vbBtnObj = GameObject.Find("MoveClubsHorseBtn" + "MoveHeartsHorseBtn" + "MoveDiamondsHorseBtn" + "MoveSpadesHorseBtn");
         vbBtnObj.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
 
         animController = horseObj.gameObject.GetComponent<Animator>();
